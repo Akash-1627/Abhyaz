@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Abhyaz/static/css/main.aaa514df.css",
-    "main.js": "/Abhyaz/static/js/main.be348d81.js",
+    "main.js": "/Abhyaz/static/js/main.9451886b.js",
     "static/js/787.bcee7638.chunk.js": "/Abhyaz/static/js/787.bcee7638.chunk.js",
     "index.html": "/Abhyaz/index.html",
     "main.aaa514df.css.map": "/Abhyaz/static/css/main.aaa514df.css.map",
-    "main.be348d81.js.map": "/Abhyaz/static/js/main.be348d81.js.map",
+    "main.9451886b.js.map": "/Abhyaz/static/js/main.9451886b.js.map",
     "787.bcee7638.chunk.js.map": "/Abhyaz/static/js/787.bcee7638.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.aaa514df.css",
-    "static/js/main.be348d81.js"
+    "static/js/main.9451886b.js"
   ]
 }
