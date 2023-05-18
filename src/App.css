@@ -1,38 +1,223 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  /* position: fixed; */
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.call{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  padding-top: 3rem;
+  @media (max-width: 991px) {
+    flex-direction: column;
+
+  }
+}
+.left{
+  width: 50%;
+  @media (max-width: 991px) {
+    width: 100%;
+  }
+}
+.call img{
+  position: relative;
+  height: auto;
+  width: 90%;
+  /* padding-left: 10%; */
+  @media (max-width: 991px) {
+    width: 100%;
+    /* padding-left: 10%; */
+  }
+}
+.right{
+  width: 48%;
+  padding-top: 2rem;
+  @media (max-width: 991px) {
+    width: 100%;
+  }
+}
+.jobopen{
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  padding-top: 2rem;
+}
+
+.row .card{
+  width: 30%;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  @media (max-width: 991px) {
+    width: 45%;
+  }
+  @media (max-width: 768px) {
+    width: 85%;
+  }
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(44, 71, 157);
+  z-index: 1000;
+}
+.foot{
+  display: flex;
+  
+}
+.foot .nav a{
+  color: #111;
+}
+.foot img{
+  width: 200px;
+  height: 100px;
+}
+.logofoot{
+  margin-right: 3rem;
+}
+.foot .nav a{
+  color: #fff;
+}
+
+.image{
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70vh;
+  background-color: #222;
+  z-index: 1;
+}
+.image img{
+  width: 100%;
+  height: 70vh;
+  opacity: 0.2;
+}
+.jobdata{
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+.jobdata p{
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
+}
+.jobdata h1{
+  color: #fff;
+  font-size: 32px;
+  @media (max-width: 480px) {
+    font-size: 24px;
+  }
+}
+.btn1{
+  margin-top: 3rem;
+  width: 10rem;
+  height: 2rem;
+  margin-right: 2rem;
+  background-color: red;
+  border: 2px solid red;
+  color: #fff;
+  border-radius: 0px;
+  transition: 0.3s ease;
+}
+.btn1:hover{
+  border: 2px solid red;
+  background-color: transparent;
+  color: red;
+}
+.jobdat{
+  width: 100%;
+  display: flex;
+  padding-top: 4rem;
+  @media (max-width: 991px) {
+    flex-direction: column-reverse;
+  }
+}
+.jobdat .desc{
+  width: 70%;
+  @media (max-width: 991px) {
+    width: 100%;
+  }
+
+}
+.jobdat .info{
+  width: 30%;
+  text-align: left;
+  @media (max-width: 991px) {
+    width: 100%;
+    padding-bottom: 5rem;
+  }
+}
+.heading{
+  position: relative;
+  text-align: left;
+  padding-left: 10%;
+  font-size: 24px;
+}
+.heading1{
+  position: relative;
+  text-align: left;
+  font-size: 24px;
+  @media (max-width: 991px) {
+    padding-left: 10%;
+  }
+}
+.val{
+  padding-top: 1rem;
+  text-align: left;
+  @media (max-width: 991px) {
+    padding-left: 10%;
+  }
+}
+.val .head{
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+.val .ans{
+  font-size: 18px;
+}
+.headp{
+  width: 80%;
+  padding-left: 10%;
+  padding-top: 2rem;
+  word-spacing: 1px;
+}
+.resp{
+  padding-left: 10%;
+  padding-top: 1rem;
+}
+.resp ul{
+  width: 80%;
+}
+.resp li{
+  padding-bottom: 1rem;
+}
+.button{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-bottom: 3rem;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cont{
+  position: relative;
 }
